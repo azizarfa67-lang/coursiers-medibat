@@ -1,0 +1,47 @@
+name: coursier_app
+description: Application mobile coursier — statut, position GPS temps réel, missions.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Réseau / API REST
+  http: ^1.2.2
+  dio: ^5.5.0
+
+  # Temps réel (WebSocket)
+  socket_io_client: ^2.0.3+1
+
+  # Carte interactive OpenStreetMap (gratuit, sans clé API)
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+
+  # Géolocalisation
+  geolocator: ^13.0.1
+  permission_handler: ^11.3.1
+
+  # Notifications push (Firebase Cloud Messaging)
+  firebase_core: ^3.4.1
+  firebase_messaging: ^15.1.0
+  flutter_local_notifications: ^17.2.2
+
+  # Stockage local sécurisé (tokens JWT)
+  flutter_secure_storage: ^9.2.2
+
+  # Gestion d'état
+  provider: ^6.1.2
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
